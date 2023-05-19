@@ -1,0 +1,70 @@
+/* =====VARIABLES===== */
+:root{
+    --font-color:#0f0f0f;
+    --bg-color: #ffffff;
+    --select-color: #a14e17;
+}
+/* =====GLOBAL SETTINGS===== */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: var(--font-color);
+}
+/* =====HEADER===== */
+header{
+    height: 60px;
+    padding: 0 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--font-color);
+}
+.col-left{
+    display: flex;
+}
+.head-logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.head-logo img{
+    height: 58px;
+}
+.head-logo h1{
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0px 10px;
+}
+.col-right{
+    display: flex;
+    align-items: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.nav-item{
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 4px 10px;
+}
+ .nav-item:hover{ /* Стили применяемые к элементу когда на него наведен курсор*/
+    border-top: 3px solid #ffffff00;
+    border-bottom: 3px solid var(--select-color);
+}
+#uniq-nav-item{
+    color: var(--select-color);
+    border: 3px solid var(--select-color);
+    margin-left: 6px;
+}
+#uniq-nav-item:hover{
+    color: var(--bg-color);
+    background-color: var(--select-color);
+}
+/* =====MAIN===== */
+main{
+    min-height: 600px;
+}
